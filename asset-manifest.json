@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/strochka/static/css/main.31d6cfe0.css",
+    "main.js": "/strochka/static/js/main.f6015b13.js",
+    "static/js/453.6595a3a9.chunk.js": "/strochka/static/js/453.6595a3a9.chunk.js",
+    "index.html": "/strochka/index.html",
+    "main.f6015b13.js.map": "/strochka/static/js/main.f6015b13.js.map",
+    "453.6595a3a9.chunk.js.map": "/strochka/static/js/453.6595a3a9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.f6015b13.js"
+  ]
+}
