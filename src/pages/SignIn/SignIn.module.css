@@ -1,3 +1,4 @@
+/* Общий стиль */
 body {
   display: flex;
   justify-content: center;
@@ -9,6 +10,7 @@ body {
 
 .container {
   display: flex;
+  flex-direction: row;
   height: 90vh;
   width: 80vw;
   border: 1px solid #f8f8f8;
@@ -141,4 +143,76 @@ body {
   font-size: 12px;
   color: #aaa;
   text-align: center;
+}
+
+/* === Адаптивные стили === */
+
+/* Для больших мониторов (1440px и больше) */
+@media (min-width: 1440px) {
+  .container {
+    width: 70vw;
+    height: 85vh;
+  }
+  .formSection {
+    padding: 80px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
+
+/* Для ноутбуков (1024px - 1440px) */
+@media (max-width: 1440px) and (min-width: 1024px) {
+  .container {
+    width: 75vw;
+    height: 85vh;
+  }
+  .formSection {
+    padding: 50px;
+  }
+}
+
+/* Для планшетов (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 90vw;
+    height: auto;
+  }
+  .imageSection {
+    height: 40vh;
+  }
+  .image {
+    height: 100%;
+  }
+  .formSection {
+    padding: 40px;
+  }
+}
+
+/* Для мобильных телефонов (меньше 768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    box-shadow: none;
+    border: none;
+  }
+  .imageSection {
+    height: 30vh;
+  }
+  .image {
+    height: 100%;
+  }
+  .formSection {
+    padding: 20px;
+  }
+  .socialButtons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .socialButton {
+    margin: 0;
+  }
 }
