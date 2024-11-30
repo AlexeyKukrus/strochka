@@ -3,7 +3,7 @@ import styles from './Typography.module.css';
 import clsx from 'clsx';
 
 type TypographyVariant = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'p' | 'span';
-type TypographyColor = 'primary' | 'secondary' | 'error' | 'success' | 'warning';
+type TypographyColor = 'primary' | 'secondary' | 'error' | 'black' | 'link' | 'warning';
 type TypographyAlign = 'left' | 'center' | 'right';
 type TypographyFont = 'volkov' | 'poppins' | 'jost';
 
