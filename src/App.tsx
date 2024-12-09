@@ -1,17 +1,18 @@
 import React from 'react';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { SignIn } from './pages/SignIn/SignIn';
-import { SignUp } from './pages/SignUp/SignUp';
+import { AuthPage } from './pages/AuthPage/AuthPage'
 
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Маршрут для страницы входа */}
-        <Route path="/sign-in" element={<SignIn />} />
-        <Route path="/register" element={<SignUp/>} />
+        <Route path="/sign-in" element={<AuthPage mode="signIn" />} />
+        <Route path="/sign-up" element={<AuthPage mode="signUp" />} />
+        <Route path="/forgot-password" element={<AuthPage mode="forgotPassword" />} />
+        <Route path="/reset-password" element={<AuthPage mode="resetPassword" />} />
+        <Route path="/confirm-code" element={<AuthPage mode="confirmCode" />} />
       </Routes>
     </Router>
   );
