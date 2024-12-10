@@ -42,7 +42,7 @@ export const createUserMethod = async (username: string, email: string, password
       {
         headers: {
           'Content-Type': 'application/json',
-          'Authorization': `Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L3dvcmRwcmVzcyIsImlhdCI6MTczMzgyNDk2MywibmJmIjoxNzMzODI0OTYzLCJleHAiOjE3MzQ0Mjk3NjMsImRhdGEiOnsidXNlciI6eyJpZCI6IjIifX19.BCtwbwbXsTwDx7EmXeR_1w5ZIwoOxSm8APcbmxWwwPA`,
+          'Authorization': `Bearer `,
         }
       }
     );
