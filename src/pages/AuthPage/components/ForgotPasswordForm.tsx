@@ -1,3 +1,4 @@
+// ForgotPasswordForm.tsx
 import React from 'react';
 
 import Photo from '../../../assets/img/Sign_in.png';
